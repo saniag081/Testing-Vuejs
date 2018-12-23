@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>clasesConVue</title>
+</head>
+
+<body>
+
+    <div id="app" class="container ">
+        <div :class="['section', 'white-text',fondo]">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum qui architecto, accusamus in magni totam  
+                repellendus ipsum repellat perferendis? Beatae odio natus provident itaque eos sit facere quibusdam cumque, facilis 
+                consectetur nisi voluptatem maiores perferendis, laboriosam neque, quis ipsum possimus eius rem. Nesciunt dignissimos
+                 fuga, enim voluptates nemo quos nihil mollitia esse eligendi cum architecto rem, atque distinctio praesentium
+                  perspiciatis eaque. Assumenda blanditiis, doloribus sunt laborum nostrum vero modi ipsam vitae ullam corporis 
+                  odio pariatur molestias nulla saepe suscipit iusto et, omnis atque vel cum? Doloribus tenetur beatae optio rem!
+                   Distinctio, laboriosam. Libero, facilis quaerat vel aspernatur asperiores illo.</p>
+        </div>
+        <div class="container section input-field" >
+            <input type="text" v-model="fondo">
+        </div>
+        <div class="white-text" :class="{ 'blue' : color, 'indigo' : !color }">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ad atque distinctio doloremque dignissimos 
+                soluta exercitationem quas assumenda facilis quod, nemo ea facere voluptatem sunt perspiciatis sed vitae accusamus 
+                dolores placeat quisquam minima. Suscipit doloribus, saepe cum placeat laboriosam a nobis aut. Animi ut aut quae. 
+                Temporibus deserunt earum, illo neque cum veniam unde aliquid libero voluptas possimus fugiat soluta rem? Quae 
+                molestiae eius, exercitationem pariatur repudiandae, perferendis hic non voluptas possimus libero, sint a corrupti 
+                beatae dolorum provident suscipit saepe earum. Nostrum nesciunt laborum, voluptatem blanditiis tempora voluptate 
+                obcaecati voluptatum expedita modi eius? Dicta rem id error in neque!</p>
+        </div>
+
+        <button class="btn" @click="color = !color">Cambiar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
