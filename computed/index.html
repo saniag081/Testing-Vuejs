@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJs</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+
+            <h1>{{titulo}}</h1>
+            <h3>invertido {{invertido}}</h3>
+
+            <div class="input-field">
+                <input type="text" v-model="titulo">
+
+                <button class="btn" @click="contador++">+</button>
+                <button class="btn" @click="contador--">-</button>
+
+                <h3>{{contador}}</h3>
+                <div class="progress">
+                    <div class="determinate" :class="color" :style="{'width': contador+'%'}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
